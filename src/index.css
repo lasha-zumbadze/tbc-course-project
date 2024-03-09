@@ -1,13 +1,123 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "PT Sans", sans-serif;
+}
+
+::selection {
+  background-color: #c2a4957b;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url("../public/images/home.jpg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transform: scale(1.17);
+  margin-top: 6rem;
+}
+
+.navigation {
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 25rem;
+}
+
+.logo {
+  margin-right: 5rem;
+  line-height: 1.2;
+  cursor: pointer;
+  letter-spacing: -2px;
+}
+
+.logo p:first-child {
+  font-size: 3rem;
+}
+
+.logo p:last-child {
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  padding-left: 0.3rem;
+  font-weight: bold;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 45%;
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.navigation li {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navigation li:hover {
+  color: #b49383;
+  text-shadow: 0 0 0 2px rgb(47, 3, 3);
+}
+
+.reservation {
+  border: 2px solid #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1.3rem 2rem;
+}
+
+.title {
+  margin-top: 2rem;
+  width: 100%;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 0 2px rgb(47, 3, 3);
+  line-height: 1.2;
+}
+
+.title h1 {
+  font-family: "Alex Brush", cursive;
+  color: #b49383;
+  font-size: 5rem;
+}
+
+.title p {
+  font-size: 6rem;
+  font-style: italic;
+}
+
+/* MAIN */
+
+/* ABOUT */
+
+.about-us {
+  height: 100vh;
+}
+
+.about-us img {
+  margin-top: 10rem;
 }
