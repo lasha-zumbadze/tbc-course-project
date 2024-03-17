@@ -1,9 +1,5 @@
 .blogCart {
-  position: relative;
-}
-
-.blogCart:nth-child(even) {
-  top: 5rem;
+  text-align: center;
 }
 
 .blogCart img {
@@ -14,7 +10,7 @@
   font-size: 3rem;
   border-bottom: 3px solid #c4ab9f;
   width: fit-content;
-  margin: 1rem 0 2rem;
+  margin: 1rem auto 2rem;
 }
 
 .blogCart p {
@@ -23,11 +19,25 @@
   line-height: 1.8;
 }
 
-.blogDate {
-  border: 2px solid #c4ab9f;
-  width: fit-content;
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.buttons button {
+  /* border: none; */
   padding: 1rem 2rem;
-  position: absolute;
+  font-weight: 600;
+}
+
+.addCart {
+  background-color: #000;
+  color: #fff;
+}
+
+.view {
   background-color: #fff;
-  transform: translate(15%, -50%);
+  border: 2px solid #000;
 }

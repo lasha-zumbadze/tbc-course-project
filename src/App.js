@@ -11,13 +11,13 @@ import meetingIcon from "./images/meeting-icon.png";
 import weddingIcon from "./images/wedding-icon.png";
 
 import BlogPosts from "./components/BlogPosts";
-import Navigation from "./components/Navigation";
+import Header from "./components/Navigation";
 import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <div className="app">
-      <Navigation />
+      <Header />
       <BlogPosts />;
       <Footer />
     </div>

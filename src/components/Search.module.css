@@ -1,0 +1,21 @@
+.search {
+  grid-column: 1 / -1;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.search input {
+  padding: 1rem;
+  font-size: 1.6rem;
+  width: 40rem;
+  border-radius: 5px;
+}
+
+.search button {
+  background-color: #000;
+  color: #fff;
+  padding: 0 3rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
