@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.blogCart:nth-child(even) {
+  top: 5rem;
+}
+
 .blogCart img {
   width: 100%;
 }

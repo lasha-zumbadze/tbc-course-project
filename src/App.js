@@ -11,9 +11,18 @@ import meetingIcon from "./images/meeting-icon.png";
 import weddingIcon from "./images/wedding-icon.png";
 
 import BlogPosts from "./components/BlogPosts";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 export default function App() {
-  return <BlogPosts />;
+  return (
+    <div className="app">
+      <Navigation />
+      <BlogPosts />;
+      <Footer />
+    </div>
+  );
+
   // return (
   //   <>
   //     <header className="header">

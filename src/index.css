@@ -17,6 +17,13 @@ body {
   background-color: #c2a4957b;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 /* HEADER */
 .header {
   width: 100%;
