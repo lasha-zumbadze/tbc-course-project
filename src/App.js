@@ -11,44 +11,32 @@ import meetingIcon from "./images/meeting-icon.png";
 import weddingIcon from "./images/wedding-icon.png";
 
 import BlogPosts from "./components/BlogPosts";
-import Header from "./components/Navigation";
-import Footer from "./components/Footer";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
-    <div className="app">
-      <Header />
-      <BlogPosts />;
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 
   // return (
+  //   <Header
+  //     backgroundImg={homeGb}
+  //     height={100}
+  //     title="The Venue is"
+  //     subtitle="An Extraordinary Experience"
+  //   />
+  // );
+  // return (
   //   <>
-  //     <header className="header">
-  //       <nav className="navigation">
-  //         <div className="logo">
-  //           <p>The Venue</p>
-  //           <p>RESTAURANT</p>
-  //         </div>
-  //         <ul>
-  //           <li>Home</li>
-  //           <li>About us</li>
-  //           <li>Menu</li>
-  //           <li>Delivery</li>
-  //           <li>Services</li>
-  //           <li>Blog</li>
-  //           <li>Contant</li>
-  //         </ul>
-  //         <div className="reservation">
-  //           <span>Reservation: </span>+995 123 456 789
-  //         </div>
-  //       </nav>
-  //       <div className="title">
-  //         <h1>The Venue is</h1>
-  //         <p>An Extraordinery Experience</p>
-  //       </div>
-  //     </header>
+  //     <Header />
   //     <main>
   //       <section className="about-us">
   //         <div className="info">
@@ -184,60 +172,60 @@ export default function App() {
   //           </div>
   //         </div>
   //       </section>
-  //       <section className="reservation-table">
-  //         <div className="reservation-title">
-  //           <h2>5 Stars</h2>
-  //           <h3>Make a Reservation</h3>
-  //         </div>
-  //         <div className="reservation-options">
-  //           <input type="date" />
-  //           <select>
-  //             <option>Time</option>
-  //             <option>10:00 AM</option>
-  //             <option>11:00 AM</option>
-  //             <option>12:00 PM</option>
-  //             <option>01:00 PM</option>
-  //             <option>02:00 PM</option>
-  //             <option>03:00 PM</option>
-  //             <option>04:00 PM</option>
-  //             <option>05:00 PM</option>
-  //             <option>06:00 PM</option>
-  //             <option>07:00 PM</option>
-  //             <option>08:00 PM</option>
-  //             <option>09:00 PM</option>
-  //             <option>10:00 PM</option>
-  //           </select>
-  //           <select>
-  //             <option>Person</option>
-  //             <option>1</option>
-  //             <option>2</option>
-  //             <option>3</option>
-  //             <option>4+</option>
-  //           </select>
-  //         </div>
-  //         <button>Make a Reservation</button>
-  //       </section>
+  // <section className="reservation-table">
+  //   <div className="reservation-title">
+  //     <h2>5 Stars</h2>
+  //     <h3>Make a Reservation</h3>
+  //   </div>
+  //   <div className="reservation-options">
+  //     <input type="date" />
+  //     <select>
+  //       <option>Time</option>
+  //       <option>10:00 AM</option>
+  //       <option>11:00 AM</option>
+  //       <option>12:00 PM</option>
+  //       <option>01:00 PM</option>
+  //       <option>02:00 PM</option>
+  //       <option>03:00 PM</option>
+  //       <option>04:00 PM</option>
+  //       <option>05:00 PM</option>
+  //       <option>06:00 PM</option>
+  //       <option>07:00 PM</option>
+  //       <option>08:00 PM</option>
+  //       <option>09:00 PM</option>
+  //       <option>10:00 PM</option>
+  //     </select>
+  //     <select>
+  //       <option>Person</option>
+  //       <option>1</option>
+  //       <option>2</option>
+  //       <option>3</option>
+  //       <option>4+</option>
+  //     </select>
+  //   </div>
+  //   <button>Make a Reservation</button>
+  // </section>
   //     </main>
   //     <footer className="footer">
-  //       <div>
-  //         <div className="logo">
-  //           <p>The Venue</p>
-  //           <p>RESTAURANT</p>
-  //         </div>
-  //         <p>Copyright &#169; 2024 All rights reserved.</p>
-  //         <p className="terms-conditions">Terms and Conditions</p>
-  //       </div>
-  //       <div className="contact">
-  //         <h3>Contact</h3>
-  //         <p>481 Creekside Lane Avila CA 93424</p>
-  //         <p>+995 123 456 789</p>
-  //         <p>example@gmail.com</p>
-  //       </div>
-  //       <div className="newsletter">
-  //         <h3>Newsletter</h3>
-  //         <input type="email" placeholder="Enter email address" />
-  //         <button className="subscribe">Subscribe</button>
-  //       </div>
+  // <div>
+  //   <div className="logo">
+  //     <p>The Venue</p>
+  //     <p>RESTAURANT</p>
+  //   </div>
+  //   <p>Copyright &#169; 2024 All rights reserved.</p>
+  //   <p className="terms-conditions">Terms and Conditions</p>
+  // </div>
+  // <div className="contact">
+  //   <h3>Contact</h3>
+  //   <p>481 Creekside Lane Avila CA 93424</p>
+  //   <p>+995 123 456 789</p>
+  //   <p>example@gmail.com</p>
+  // </div>
+  // <div className="newsletter">
+  //   <h3>Newsletter</h3>
+  //   <input type="email" placeholder="Enter email address" />
+  //   <button className="subscribe">Subscribe</button>
+  // </div>
   //     </footer>
   //   </>
   // );
