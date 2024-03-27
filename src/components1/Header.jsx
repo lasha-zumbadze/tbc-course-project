@@ -8,6 +8,9 @@ function Header({ backgroundImg, height, title, subtitle }) {
       style={{
         background: `url(${backgroundImg})`,
         height: `${height}vh`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "noRepeat",
       }}
       className={styles.header}
     >
@@ -17,10 +20,11 @@ function Header({ backgroundImg, height, title, subtitle }) {
           <Link to="/">Home</Link>
           <li>About us</li>
           <li>Menu</li>
-          <li>Delivery</li>
+          {/* <li>Delivery</li> */}
           <li>Services</li>
-          <li>Blog</li>
-          <Link to="contact">Contant</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/contact">Contant</Link>
+          <Link to="/profile">Profile</Link>
         </ul>
         <div className={styles.reservation}>
           <span>Reservation: </span>+995 123 456 789

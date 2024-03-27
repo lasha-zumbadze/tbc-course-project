@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Navigation.module.css";
 
 function Navigation() {
@@ -8,13 +9,14 @@ function Navigation() {
         <p>RESTAURANT</p>
       </div>
       <ul>
-        <li>Home</li>
+        <Link to="/">Home</Link>
         <li>About us</li>
         <li>Menu</li>
-        <li>Delivery</li>
+        {/* <li>Delivery</li> */}
         <li>Services</li>
-        <li>Blog</li>
-        <li>Contant</li>
+        <Link to="/blog">Blog</Link>
+        <Link to="/contact">Contant</Link>
+        <Link to="/profile">Profile</Link>
       </ul>
       <div className={styles.reservation}>
         <span>Reservation: </span>+995 123 456 789

@@ -10,18 +10,20 @@ import birthdayIcon from "./images/birthday-icon.png";
 import meetingIcon from "./images/meeting-icon.png";
 import weddingIcon from "./images/wedding-icon.png";
 
-import BlogPosts from "./components/BlogPosts";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Profile from "./pages/Profile";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="blog" element={<Blogs />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
